@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  padding: 10px 44px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  box-sizing: border-box;
+  border:none;
+}
+
+.button--basic {
+  background-color: $basic-green;
+}
+
+.button--secondary {
+  background-color:#F2F2F2;
+  color: #000000;
+}

@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи - каталог</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a class="main-header__logo logo"
-        ><img
-          class="main-header__logo-image"
-          src="img/header_logo.svg"
-          width="33"
-          height="36"
-          alt="Логотип." />
+      <nav class="navigation">
+        <a class="main-header__logo--img"
+          ><img
+            class="main-header__logo-image"
+            src="img/header_logo.svg"
+            width="33"
+            height="36"
+            alt="Логотип."
+        /></a>
+        <a class="main-header__logo--text">
           <img
             class="main-header__logo-text"
             src="img/header_logo_text.svg"
@@ -21,31 +25,43 @@
             alt="Кэт энерджи."
           />
         </a>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
+        <button
+          class="navigation__toggle navigation__toggle--open"
+          type="button"
+        >
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <button
+          class="navigation__toggle navigation__toggle--close"
+          type="button"
+        >
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+        <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Главная</a>
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог продукции</a>
+              <a class="navigation__link" href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Подбор программы</a>
+              <a class="navigation__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
+        </div>
       </nav>
     </header>
-    <main class="catalog-container">
+    <main class="catalog-main-container general-container">
       <section class="catalog">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
             <img
               class="catalog__foto"
-              src="img/catalog_1.png"
+              src="./img/catalog/catalog_1.png"
               width="68"
               height="86"
               alt="Cat Energy PRO 500 г."
@@ -65,14 +81,14 @@
                 <dd class="catalog__description-number">700 Р.</dd>
               </div>
             </dl>
-            <button class="catalog__button button" type="button">
+            <button class="catalog__button button button--basic" type="button">
               Заказать
             </button>
           </li>
           <li class="catalog__item">
             <img
               class="catalog__foto"
-              src="img/catalog_2.png"
+              src="./img/catalog/catalog_2.png"
               width="84"
               height="100"
               alt="Cat Energy PRO 1000 г."
@@ -92,14 +108,14 @@
                 <dd class="catalog__description-number">1000 Р.</dd>
               </div>
             </dl>
-            <button class="catalog__button button" type="button">
+            <button class="catalog__button button button--basic" type="button">
               Заказать
             </button>
           </li>
           <li class="catalog__item">
             <img
               class="catalog__foto"
-              src="img/catalog_3.png"
+              src="./img/catalog/catalog_3.png"
               width="68"
               height="78"
               alt="Cat Energy PRO 500 г."
@@ -119,14 +135,14 @@
                 <dd class="catalog__description-number">700 Р.</dd>
               </div>
             </dl>
-            <button class="catalog__button button" type="button">
+            <button class="catalog__button button button--basic" type="button">
               Заказать
             </button>
           </li>
           <li class="catalog__item">
             <img
               class="catalog__foto"
-              src="img/catalog_4.png"
+              src="./img/catalog/catalog_4.png"
               width="84"
               height="100"
               alt="Cat Energy PRO 1000 г."
@@ -146,14 +162,14 @@
                 <dd class="catalog__description-number">1000 Р.</dd>
               </div>
             </dl>
-            <button class="catalog__button button" type="button">
+            <button class="catalog__button button button--basic" type="button">
               Заказать
             </button>
           </li>
           <li class="catalog__item">
             <img
               class="catalog__foto"
-              src="img/catalog_5.png"
+              src="./img/catalog/catalog_5.png"
               width="84"
               height="100"
               alt="Cat Energy slim 500 г."
@@ -173,14 +189,14 @@
                 <dd class="catalog__description-number">400 Р.</dd>
               </div>
             </dl>
-            <button class="catalog__button button" type="button">
+            <button class="catalog__button button button--basic" type="button">
               Заказать
             </button>
           </li>
           <li class="catalog__item">
             <img
               class="catalog__foto"
-              src="img/catalog_6.png"
+              src="./img/catalog/catalog_6.png"
               width="84"
               height="100"
               alt="Cat Energy slim 1000 г"
@@ -200,14 +216,14 @@
                 <dd class="catalog__description-number">700 Р.</dd>
               </div>
             </dl>
-            <button class="catalog__button button" type="button">
+            <button class="catalog__button button button--basic" type="button">
               Заказать
             </button>
           </li>
           <li class="catalog__item">
             <img
               class="catalog__foto"
-              src="img/catalog_7.png"
+              src="./img/catalog/catalog_7.png"
               width="84"
               height="100"
               alt="Cat Energy slim 500 г"
@@ -227,18 +243,21 @@
                 <dd class="catalog__description-number">500 Р.</dd>
               </div>
             </dl>
-            <button class="catalog__button button" type="button">
+            <button class="catalog__button button button--basic" type="button">
               Заказать
             </button>
           </li>
         </ul>
       </section>
-      <section class="catalog-more">
+      <section class="catalog-more catalog-more__wrapper">
         <span class="catalog-more__image"></span>
         <span class="visually-hidden">Плюс</span>
         <h2 class="catalog-more__title">Показать еще 100500 товаров</h2>
         <p class="catalog-more__text">На самом деле вкусов гораздо больше!</p>
-        <button class="catalog-more__button button" type="button">
+        <button
+          class="catalog-more__button button button--secondary"
+          type="button"
+        >
           показать все
         </button>
       </section>
@@ -251,7 +270,10 @@
               <dt class="catalog-additions__text">1 упаковка (100 г)</dt>
               <dd class="catalog-additions__price">200 Р.</dd>
             </dl>
-            <button class="catalog-additions__button button" type="button">
+            <button
+              class="catalog-additions__button button button--basic"
+              type="button"
+            >
               Заказать
             </button>
           </li>
@@ -262,7 +284,10 @@
               <dt class="catalog-additions__text">5 литров</dt>
               <dd class="catalog-additions__price">50 Р.</dd>
             </dl>
-            <button class="catalog-additions__button button" type="button">
+            <button
+              class="catalog-additions__button button button--basic"
+              type="button"
+            >
               Заказать
             </button>
           </li>
@@ -273,7 +298,10 @@
               <dt class="catalog-additions__text">1 литр</dt>
               <dd class="catalog-additions__price">100 Р.</dd>
             </dl>
-            <button class="catalog-additions__button button" type="button">
+            <button
+              class="catalog-additions__button button button--basic"
+              type="button"
+            >
               Заказать
             </button>
           </li>
@@ -283,21 +311,24 @@
               <dt class="catalog-additions__text">1 упаковка (30 г)</dt>
               <dd class="catalog-additions__price">300 Р.</dd>
             </dl>
-            <button class="catalog-additions__button button" type="button">
+            <button
+              class="catalog-additions__button button button--basic"
+              type="button"
+            >
               Заказать
             </button>
           </li>
         </ul>
       </section>
-      <section class="present">
-        <span class="present__icon"></span>
-        <span class="visually-hidden">Подарок.</span>
-        <h2 class="present__title">
-          Закажите все и получите чехол для кота в подарок!
-        </h2>
+      <section class="present catalog-main-container__present">
+        <div class="present__container">
+          <h2 class="present__title">
+            Закажите все и получите чехол для кота в подарок!
+          </h2>
+        </div>
       </section>
     </main>
-    <section class="contacts">
+    <section class="contacts contacts__catalog">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper-adress">
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
@@ -305,8 +336,9 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </div>
-      <span class="map"></span>
-      <span class="visually-hidden">Карта</span>
+      <div class="contacts__map map">
+        <span class="visually-hidden">Карта</span>
+      </div>
     </section>
     <footer class="footer">
       <div class="footer__logo-text-wrapper">

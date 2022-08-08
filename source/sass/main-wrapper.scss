@@ -1,0 +1,45 @@
+.main-wrapper__promo {
+  position: relative;
+  background-image: linear-gradient(
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+    ),
+    url(../img/index_background.jpg);
+  background-color: #68b738;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 27px;
+  padding-bottom: 164px;
+}
+
+
+.main-wrapper__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-wrapper__slogan {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.main-wrapper__image {
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  margin-left:-140px ;
+}
+
+.main-wrapper__button {
+  margin: 138px 20px 20px;
+}

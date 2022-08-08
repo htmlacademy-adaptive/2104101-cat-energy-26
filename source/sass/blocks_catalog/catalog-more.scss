@@ -1,0 +1,47 @@
+.catalog-more__title {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 78px;
+  padding-bottom: 8px;
+  position: relative;
+  margin: 0;
+}
+
+.catalog-more__title::before {
+  content: "";
+  background-image: url(../../img/icon_plus.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.catalog-more__text {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 21px;
+}
+
+.catalog-more__wrapper {
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.catalog-more__wrapper::after {
+  content: "";
+  height: 1px;
+  width: 320px;
+  background-color: #EBEBEB;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}

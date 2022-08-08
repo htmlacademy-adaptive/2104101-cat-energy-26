@@ -1,0 +1,36 @@
+.contacts__wrapper-adress {
+  display: flex;
+  padding: 26px 20px;
+}
+
+.contacts__title {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__adress {
+  line-height: 20px;
+  font-style: normal;
+  color: #444444;
+}
+
+.contacts__map {
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  width: 320px;
+  height: 362px;
+}
+
+.contacts__catalog {
+  background-color: $basic-gray;
+
+}
+
