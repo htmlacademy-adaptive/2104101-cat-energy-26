@@ -1,13 +1,12 @@
 .slider-toggles {
-  width:209px;
+  width: 209px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-
 }
 
 .slider-toggles__toggle {
-  font-family: "Oswald";
+  font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -20,17 +19,15 @@
 .slider-toggles__range-scale {
   height: 14px;
   width: 85px;
-  background: #FFFFFF;
-  border: 1px solid #CDCDCD;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
   border-radius: 6px;
   position: relative;
-
 }
-
 
 .slider-toggles__range-bar {
   height: 6px;
-  background-color: #68B738;
+  background-color: #68b738;
   border-radius: 6px;
   position: absolute;
   left: 6px;

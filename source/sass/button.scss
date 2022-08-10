@@ -8,9 +8,9 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Oswald';
+  font-family: $title-font;
   box-sizing: border-box;
-  border:none;
+  border: none;
 }
 
 .button--basic {
@@ -18,6 +18,6 @@
 }
 
 .button--secondary {
-  background-color:#F2F2F2;
+  background-color: #f2f2f2;
   color: #000000;
 }

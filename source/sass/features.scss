@@ -25,7 +25,7 @@
 
 .features-list__item--composition::before {
   content: "";
-  background-image: url(../img/features_composition.svg);
+  background-image: url"(../img/features_composition.svg)";
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
@@ -36,7 +36,7 @@
 
 .features-list__item--flour::before {
   content: "";
-  background-image: url(../img/features__flour.svg);
+  background-image: url"(../img/features__flour.svg)";
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
@@ -47,7 +47,7 @@
 
 .features-list__item--food::before {
   content: "";
-  background-image: url(../img/features_food.svg);
+  background-image: url"(../img/features_food.svg)";
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
@@ -58,7 +58,7 @@
 
 .features-list__item--month::before {
   content: "";
-  background-image: url(../img/features_month.svg);
+  background-image: url"(../img/features_month.svg)";
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;

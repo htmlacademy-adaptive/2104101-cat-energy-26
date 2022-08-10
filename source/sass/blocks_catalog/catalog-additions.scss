@@ -4,7 +4,7 @@
 }
 
 .catalog-additions__title {
-  font-family: Oswald, sans-serif;
+  font-family: $title-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -39,7 +39,7 @@
   text-transform: uppercase;
 }
 
-catalog-additions__description {
+.catalog-additions__description {
   font-size: 14px;
   line-height: 14px;
 }
