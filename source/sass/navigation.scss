@@ -1,16 +1,13 @@
 .navigation {
   display: flex;
   position: relative;
-  border-bottom: 1px solid #E6E6E6;
-
+  border-bottom: 1px solid #e6e6e6;
 }
-
 
 .navigation__toggle {
   border: none;
   background-color: #ffffff;
   padding: 20px;
-
 }
 
 .navigation__toggle--open {
@@ -21,10 +18,9 @@
   min-height: 32px;
 }
 
-.navigation__toggle--close{
+.navigation__toggle--close {
   display: none;
 }
-
 
 .main-header__logo--img {
   margin: 10px 56px 17px 20px;
@@ -32,11 +28,9 @@
 
 .main-header__logo--text {
   margin: 23px 65px 24px 0;
-
 }
 
-
-.navigation__list{
+.navigation__list {
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -64,7 +58,6 @@
   text-transform: uppercase;
   padding-top: 22px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
 }
-
