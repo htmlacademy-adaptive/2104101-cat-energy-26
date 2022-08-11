@@ -1,0 +1,49 @@
+.example {
+  background-color: #eaeaea;
+}
+
+.example__wrapper {
+  padding: 25px 20px 40px;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__number {
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  padding: 14px 20px 17px;
+  border-radius: 3px;
+}
+
+.example__item-wrapper {
+  position: relative;
+}
+
+.example__text {
+  display: inline-block;
+  position: absolute;
+  bottom: -8px;
+  background-color: #eaeaea;
+  text-align: center;
+  margin: 0;
+}

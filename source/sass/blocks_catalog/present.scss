@@ -1,0 +1,39 @@
+.present {
+  background-image:
+    linear-gradient(
+      hsl(97 53% 47% / 85%),
+      hsl(97 53% 47% / 85%)
+    ),
+    url("../../img/background_present.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog-main-container__present {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.present__title {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 186px 61px 43px 58px;
+  position: relative;
+  margin: 0;
+}
+
+.present__title::before {
+  content: "";
+  width: 78px;
+  height: 80px;
+  background-image: url("../../img/icon_gift.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 50%;
+  margin-right: -39px;
+  top: 48px;
+}

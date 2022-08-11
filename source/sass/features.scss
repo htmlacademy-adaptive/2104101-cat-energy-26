@@ -1,0 +1,68 @@
+.features__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-left: 20px;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features-list__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 26px;
+}
+
+.features-list__description {
+  display: block;
+  margin: 0;
+}
+
+.features-list__item--composition::before {
+  content: "";
+  background-image: url("../img/features_composition.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.features-list__item--flour::before {
+  content: "";
+  background-image: url("../img/features__flour.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.features-list__item--food::before {
+  content: "";
+  background-image: url("../img/features_food.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.features-list__item--month::before {
+  content: "";
+  background-image: url("../img/features_month.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

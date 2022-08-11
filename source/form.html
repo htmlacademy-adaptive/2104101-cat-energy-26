@@ -3,56 +3,68 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a class="main-header__logo logo"
-        ><img
-          class="main-header__logo-image"
-          src="img/header_logo.svg"
-          width="33"
-          height="36"
-          alt="Логотип."
-        />
-        <img
-          class="main-header__logo-text"
-          src="img/header_logo_text.svg"
-          width="101"
-          height="18"
-          alt="Кэт энерджи."
-        />
-      </a>
       <nav class="navigation">
-        <button class="navigation__toggle" type="button">
+        <a class="main-header__logo--img"
+          ><img
+            class="main-header__logo-image"
+            src="img/header_logo.svg"
+            width="33"
+            height="36"
+            alt="Логотип."
+        /></a>
+        <a class="main-header__logo--text">
+          <img
+            class="main-header__logo-text"
+            src="img/header_logo_text.svg"
+            width="101"
+            height="18"
+            alt="Кэт энерджи."
+          />
+        </a>
+        <button
+          class="navigation__toggle navigation__toggle--open"
+          type="button"
+        >
           <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button
+          class="navigation__toggle navigation__toggle--close"
+          type="button"
+        >
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Главная</a>
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог продукции</a>
+              <a class="navigation__link" href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Подбор программы</a>
+              <a class="navigation__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="form-container">
+    <main class="form-container general-container">
       <section class="form">
         <h1 class="form__title">Подбор программы</h1>
-        <h2 class="form__subtitle">
-          Заполните анкету, и мы подберем программу питания для вашего кота
+        <h2 class="form__subtitle"> Заполните анкету, и мы подберем программу питания для вашего кота
         </h2>
         <form
           class="form__fields"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <ul class="form__list">
+          <ul class="form__list form__list--name">
             <li class="form__item">
               <label class="form__label" for="name">ИМЯ:*</label>
               <input
@@ -73,7 +85,7 @@
                 id="weight"
               />
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--last">
               <label class="form__label" for="age">Возраст (лет):</label>
               <input
                 class="form__input"
@@ -102,7 +114,7 @@
                   Набор массы
                 </label>
               </li>
-              <li class="form__item-radio">
+              <li class="form__item-radio form__item-radio--last">
                 <label class="control">
                   <input class="control-input" type="radio" name="goal" /><span
                     class="control-mark"
@@ -113,7 +125,7 @@
             </ul>
           </fieldset>
           <div class="form__contacts">
-            <h2 class="form__subject">Контактные данные (владельца кота)</h2>
+            <h2 class="form__subject form__subject--contacts">Контактные данные (владельца кота)</h2>
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="email">E-mail:*</label>
@@ -137,17 +149,17 @@
               </li>
             </ul>
           </div>
-          <h2 class="form__subject">Комментарий</h2>
+          <h2 class="form__subject form__subject--comment">Комментарий</h2>
           <textarea class="form__comment" name="comment" id="comment">
 Расскажите обо всех повадках кота
     </textarea
           >
-          <h2 class="form__subject">Дополнительно</h2>
+          <h2 class="form__subject form__subject--additions">Дополнительно</h2>
           <ul class="form__list-checkbox">
             <li class="form__item">
-              <label class="form__label">
+              <label class="form__label form__label--additions">
                 <input
-                  class="visually-hidden control-input"
+                  class="control-input"
                   type="checkbox"
                   name="shugar"
                   checked
@@ -156,9 +168,9 @@
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label">
+              <label class="form__label form__label--additions">
                 <input
-                  class="visually-hidden control-input"
+                  class="control-input"
                   type="checkbox"
                   name="water"
                 /><span class="control-mark"></span>
@@ -166,9 +178,9 @@
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label">
+              <label class="form__label form__label--additions">
                 <input
-                  class="visually-hidden control-input"
+                  class="control-input"
                   type="checkbox"
                   name="milk"
                 /><span class="control-mark"></span>
@@ -176,9 +188,9 @@
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label">
+              <label class="form__label form__label--additions">
                 <input
-                  class="visually-hidden control-input"
+                  class="control-input"
                   type="checkbox"
                   name="vitamins"
                 /><span class="control-mark"></span>
@@ -186,12 +198,12 @@
               </label>
             </li>
           </ul>
-          <button class="form__button" type="submit">Отправить заявку</button>
+          <button class="form__button button button--basic" type="submit">Отправить заявку</button>
           <p class="form__text">* — Обязательные поля</p>
         </form>
       </section>
     </main>
-    <section class="contacts">
+    <section class="contacts contacts--background">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper-adress">
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
@@ -199,8 +211,9 @@
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </div>
-      <span class="map"></span>
-      <span class="visually-hidden">Карта</span>
+      <div class="contacts__map map">
+        <span class="visually-hidden">Карта</span>
+      </div>
     </section>
     <footer class="footer">
       <div class="footer__logo-text-wrapper">
@@ -300,4 +313,3 @@
     </footer>
   </body>
 </html>
-
