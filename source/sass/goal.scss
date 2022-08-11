@@ -1,16 +1,16 @@
-.goal-list {
+.goal__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.goal-list__item {
+.goal__item {
   background-color: $basic-gray;
   padding-top: 30px;
   margin-bottom: 20px;
 }
 
-.goal-list__item-title {
+.goal__item-title {
   display: block;
   font-family: $title-font;
   font-size: 24px;
@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.goal-list__item-title--slim::before {
+.goal__item-title--slim::before {
   content: "";
   background-image: url("../img/goal_cat_1.svg");
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
   left: 22px;
 }
 
-.goal-list__item-title--weight::before {
+.goal__item-title--weight::before {
   content: "";
   background-image: url("../img/goal_cat_2.svg");
   background-repeat: no-repeat;
@@ -46,12 +46,12 @@
 }
 
 
-.goal-list__item-description {
+.goal__item-description {
   margin: 0 33px 23px 20px;
   position: relative;
 }
 
-.goal-list__item-description::after {
+.goal__item-description::after {
   content: "";
   height: 1px;
   min-width: 240px;
@@ -61,7 +61,7 @@
   position: absolute;
 }
 
-.goal-list__link {
+.goal__link {
   position: relative;
   display: inline-block;
   font-family: $title-font;
@@ -74,7 +74,7 @@
   padding: 19px 50px 22px 19px;
 }
 
-.goal-list__link::before {
+.goal__link::before {
   position: absolute;
   content: "";
   background-image: url("../img/icon_arrow.svg");
