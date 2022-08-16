@@ -2,29 +2,32 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="navigation">
-        <a class="main-header__logo--img"
-          ><img
-            class="main-header__logo-image"
-            src="img/header_logo.svg"
-            width="33"
-            height="36"
-            alt="Логотип."
-        /></a>
-        <a class="main-header__logo--text">
-          <img
-            class="main-header__logo-text"
-            src="img/header_logo_text.svg"
-            width="101"
-            height="18"
-            alt="Кэт энерджи."
-          />
-        </a>
+      <nav class="navigation main-header_navigation">
+        <div class="navigation_logo-wrapper">
+          <a class="navigation__logo--img"
+            ><img
+              class="navigation__logo-image"
+              src="img/header_logo.svg"
+              width="33"
+              height="36"
+              alt="Логотип."
+          /></a>
+          <a class="navigation__logo--text">
+            <img
+              class="navigation__logo-text"
+              src="img/header_logo_text.svg"
+              width="101"
+              height="18"
+              alt="Кэт энерджи."
+            />
+          </a>
+        </div>
         <button
           class="navigation__toggle navigation__toggle--open"
           type="button"
@@ -40,93 +43,114 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
+              <a
+                class="navigation__link navigation__link--dark"
+                href="index.html"
+                >Главная</a
+              >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html"
+              <a
+                class="navigation__link navigation__link--dark"
+                href="catalog.html"
                 >Каталог продукции</a
               >
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Подбор программы</a>
+              <a
+                class="navigation__link navigation__link--dark"
+                href="form.html"
+                >Подбор программы</a
+              >
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="form-container general-container">
+    <main class="form-container general-container general-container--form">
       <section class="form">
         <h1 class="form__title">Подбор программы</h1>
-        <h2 class="form__subtitle"> Заполните анкету, и мы подберем программу питания для вашего кота
+        <h2 class="form__subtitle">
+          Заполните анкету, и мы подберем программу питания для вашего кота
         </h2>
         <form
           class="form__fields"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <ul class="form__list form__list--name">
-            <li class="form__item">
-              <label class="form__label" for="name">ИМЯ:*</label>
-              <input
-                class="form__input"
-                type="text"
-                name="name"
-                value="барсик"
-                id="name"
-              />
-            </li>
-            <li class="form__item">
-              <label class="form__label" for="weight">Вес (кг):*</label>
-              <input
-                class="form__input"
-                type="text"
-                name="weight"
-                value="7"
-                id="weight"
-              />
-            </li>
-            <li class="form__item form__item--last">
-              <label class="form__label" for="age">Возраст (лет):</label>
-              <input
-                class="form__input"
-                type="text"
-                name="age"
-                value="7"
-                id="age"
-              />
-            </li>
-          </ul>
-          <fieldset class="form__filter">
-            <ul class="form__list-radio">
-              <li class="form__item-radio">
-                <label class="control">
-                  <input class="control-input" type="radio" name="goal" /><span
-                    class="control-mark"
-                  ></span>
-                  похудение
-                </label>
+          <div class="form_fieldsets-wrapper">
+            <ul class="form__list form__list--name">
+              <li class="form__item">
+                <label class="form__label" for="name">ИМЯ:*</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  value="барсик"
+                  id="name"
+                />
               </li>
-              <li class="form__item-radio">
-                <label class="control">
-                  <input class="control-input" type="radio" name="goal" /><span
-                    class="control-mark"
-                  ></span>
-                  Набор массы
-                </label>
+              <li class="form__item">
+                <label class="form__label" for="weight">Вес (кг):*</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="weight"
+                  value="7"
+                  id="weight"
+                />
               </li>
-              <li class="form__item-radio form__item-radio--last">
-                <label class="control">
-                  <input class="control-input" type="radio" name="goal" /><span
-                    class="control-mark"
-                  ></span>
-                  Не знаю (Нужен ваш совет)</label
-                >
+              <li class="form__item form__item--last">
+                <label class="form__label" for="age">Возраст (лет):</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="age"
+                  value="7"
+                  id="age"
+                />
               </li>
             </ul>
-          </fieldset>
+            <fieldset class="form__filter">
+              <ul class="form__list-radio">
+                <li class="form__item-radio">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="goal"
+                    /><span class="control-mark"></span>
+                    похудение
+                  </label>
+                </li>
+                <li class="form__item-radio">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="goal"
+                    /><span class="control-mark"></span>
+                    Набор массы
+                  </label>
+                </li>
+                <li class="form__item-radio form__item-radio--last">
+                  <label class="control">
+                    <input
+                      class="control-input"
+                      type="radio"
+                      name="goal"
+                    /><span class="control-mark"></span> Не знаю (Нужен ваш
+                    совет)</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <div class="form__contacts">
-            <h2 class="form__subject form__subject--contacts">Контактные данные (владельца кота)</h2>
-            <ul class="form__list">
+            <h2 class="form__subject form__subject--contacts">
+              Контактные данные (владельца кота)
+            </h2>
+            <ul class="form__list form__list--contacts">
               <li class="form__item">
                 <label class="form__label" for="email">E-mail:*</label>
                 <input
@@ -179,11 +203,9 @@
             </li>
             <li class="form__item">
               <label class="form__label form__label--additions">
-                <input
-                  class="control-input"
-                  type="checkbox"
-                  name="milk"
-                /><span class="control-mark"></span>
+                <input class="control-input" type="checkbox" name="milk" /><span
+                  class="control-mark"
+                ></span>
                 молоко
               </label>
             </li>
@@ -198,18 +220,25 @@
               </label>
             </li>
           </ul>
-          <button class="form__button button button--basic" type="submit">Отправить заявку</button>
-          <p class="form__text">* — Обязательные поля</p>
+          <div class="form_button-wrapper">
+            <button class="form__button button button--basic" type="submit">
+              Отправить заявку
+            </button>
+            <p class="form__text">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
     <section class="contacts contacts--background">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper-adress">
+      <div class="contacts__adress-container">
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
+        <div class="contacts__adress-wrapper">
+          <address class="contacts__adress contacts__title--street">
+            ул. Большая Конюшенная, д. 19/8
+          </address>
+          <address class="contacts__adress">Санкт-Петербург</address>
+        </div>
       </div>
       <div class="contacts__map map">
         <span class="visually-hidden">Карта</span>

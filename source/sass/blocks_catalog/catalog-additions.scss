@@ -37,9 +37,115 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-top: 13px;
+  margin: 0;
 }
 
 .catalog-additions__description {
   font-size: 14px;
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-additions__text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog-additions__name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .catalog-additions__text {
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+  }
+
+  .catalog-additions__item {
+    padding: 30px 48px 28px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .catalog-additions__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 47px;
+    border-bottom: none;
+  }
+
+  .catalog-additions__title::after {
+    width: 328px;
+    right: -36px;
+  }
+
+  .catalog-additions__title::before {
+    content: "";
+    height: 2px;
+    width: 53px;
+    background-color: $basic-green;
+    position: absolute;
+    left: -37px;
+    top: 50%;
+  }
+
+  .catalog-additions__button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-additions__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+    padding-bottom: 86px;
+  }
+
+  .catalog-additions__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0 17px 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog-additions__button {
+    width: 244px;
+  }
+
+  .catalog-additions__name {
+    width: 161px;
+    padding-right: 163px;
+  }
+
+  .catalog-additions__text {
+    padding-right: 112px;
+  }
+
+  .catalog-additions__price {
+    margin-left: auto;
+  }
+
+  .catalog-additions__title {
+    padding: 75px 852px 81px 0;
+  }
+
+  .catalog-additions__title::after {
+    width: 957px;
+    right: -135px;
+  }
+
+  .catalog-additions__title::before {
+    left: -110px;
+    width: 70px;
+  }
 }

@@ -1,6 +1,5 @@
-.present {
-  background-image:
-    linear-gradient(
+.present__container {
+  background-image: linear-gradient(
       hsl(97 53% 47% / 85%),
       hsl(97 53% 47% / 85%)
     ),
@@ -36,4 +35,46 @@
   right: 50%;
   margin-right: -39px;
   top: 48px;
+}
+
+@media (min-width: $tablet-width) {
+  .present__container {
+    background-image: linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../../img/background_present--tablet.jpg");
+  }
+
+  .present__title {
+    padding: 71px 124px 69px 422px;
+    text-align: left;
+  }
+
+  .present__title::before {
+    left: 77px;
+    top: 57px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present__title {
+    text-align: center;
+    padding: 185px 43px 42px 41px;
+  }
+
+  .present__container {
+    background-image: linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../../img/background_present--desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .catalog-main-container__present {
+    margin: 0;
+  }
 }
