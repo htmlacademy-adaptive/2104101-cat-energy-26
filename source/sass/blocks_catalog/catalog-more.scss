@@ -18,7 +18,7 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 23px;
+  top: 49px;
   left: 50%;
   margin-left: -15px;
 }
@@ -49,9 +49,31 @@
 @media (min-width: $tablet-width) {
   .catalog-more__wrapper {
     border: 2px solid $basic-gray;
+    padding: 37px;
   }
 
   .catalog-more__wrapper::after {
     display: none;
+  }
+
+  .catalog-more__title {
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 123px;
+    padding-bottom: 23px;
+  }
+
+  .catalog-more__text {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 35px 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-more__text {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 0 87px 0;
   }
 }

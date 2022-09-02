@@ -50,25 +50,28 @@
 }
 
 .general-container {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: hidden;
 }
 
 @media (min-width: $tablet-width) {
   .general-container {
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-x: hidden;
   }
 
   .general-container--form {
-    margin-left: 70px;
-    margin-right: 67px;
+    padding-left: 70px;
+    padding-right: 67px;
+    overflow-x: hidden;
   }
 }
 
 @media (min-width: $desktop-width) {
   .general-container {
-    margin-left: 110px;
-    margin-right: 110px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
