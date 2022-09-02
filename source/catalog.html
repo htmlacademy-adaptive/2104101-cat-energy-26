@@ -8,64 +8,50 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="navigation main-header_navigation">
-        <div class="navigation_logo-wrapper">
-          <a class="navigation__logo--img"
-            ><img
-              class="navigation__logo-image"
-              src="img/header_logo.svg"
-              width="33"
-              height="36"
-              alt="Логотип."
-          /></a>
-          <a class="navigation__logo--text">
-            <img
-              class="navigation__logo-text"
-              src="img/header_logo_text.svg"
-              width="101"
-              height="18"
-              alt="Кэт энерджи."
-            />
-          </a>
-          <button
-            class="navigation__toggle navigation__toggle--open"
-            type="button"
-          >
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <button
-            class="navigation__toggle navigation__toggle--close"
-            type="button"
-          >
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
-        </div>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--dark"
-                href="index.html"
-                >Главная</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--dark"
-                href="catalog.html"
-                >Каталог продукции</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--dark"
-                href="form.html"
-                >Подбор программы</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <nav
+      class="navigation main-header__navigation navigation--closed navigation--nojs"
+    >
+      <div class="navigation__logo-wrapper">
+        <a class="navigation__logo--img"
+          ><img
+            class="navigation__logo-image"
+            src="img/header_logo.svg"
+            width="33"
+            height="36"
+            alt="Логотип."
+        /></a>
+        <a class="navigation__logo--text">
+          <img
+            class="navigation__logo-text"
+            src="img/header_logo_text.svg"
+            width="101"
+            height="18"
+            alt="Кэт энерджи."
+          />
+        </a>
+      </div>
+      <button class="navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--dark" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a
+              class="navigation__link navigation__link--dark navigation__link--active-light"
+              href="catalog.html"
+              >Каталог продукции</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--dark" href="form.html"
+              >Подбор программы</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="catalog-main-container general-container">
       <section class="catalog">
@@ -81,7 +67,7 @@
                 alt="Cat Energy PRO 500 г."
               />
               <div class="catalog__text-wrapper">
-                <span class="catalog__name">Cat Energy PRO 500 г</span>
+                <span class="catalog__name">Cat Energy PRO<br> 500 г</span>
                 <dl class="catalog__description-list">
                   <div class="catalog__description-wrapper">
                     <dt class="catalog__description-item">Масса</dt>
@@ -112,7 +98,7 @@
                 alt="Cat Energy PRO 1000 г."
               />
               <div class="catalog__text-wrapper">
-                <span class="catalog__name">Cat Energy PRO 1000 г</span>
+                <span class="catalog__name">Cat Energy PRO<br> 1000 г</span>
                 <dl class="catalog__description-list">
                   <div class="catalog__description-wrapper">
                     <dt class="catalog__description-item">Масса</dt>
@@ -143,7 +129,7 @@
                 alt="Cat Energy PRO 500 г."
               />
               <div class="catalog__text-wrapper">
-                <span class="catalog__name">Cat Energy PRO 500 г</span>
+                <span class="catalog__name">Cat Energy PRO<br> 500 г</span>
                 <dl class="catalog__description-list">
                   <div class="catalog__description-wrapper">
                     <dt class="catalog__description-item">Масса</dt>
@@ -165,7 +151,6 @@
             </button>
           </li>
           <li class="catalog__item">
-            <div class="catalog__text-wrapper">
               <div class="catalog__item-wrapper">
                 <img
                   class="catalog__foto"
@@ -175,7 +160,7 @@
                   alt="Cat Energy PRO 1000 г."
                 />
                 <div class="catalog__text-wrapper">
-                  <span class="catalog__name">Cat Energy PRO 1000 г</span>
+                  <span class="catalog__name">Cat Energy PRO<br> 1000 г</span>
                   <dl class="catalog__description-list">
                     <div class="catalog__description-wrapper">
                       <dt class="catalog__description-item">Масса</dt>
@@ -207,7 +192,7 @@
                 alt="Cat Energy slim 500 г."
               />
               <div class="catalog__text-wrapper">
-                <span class="catalog__name">Cat Energy slim 500 г</span>
+                <span class="catalog__name">Cat Energy slim <br>500 г</span>
                 <dl class="catalog__description-list">
                   <div class="catalog__description-wrapper">
                     <dt class="catalog__description-item">Масса</dt>
@@ -238,7 +223,7 @@
                 alt="Cat Energy slim 1000 г"
               />
               <div class="catalog__text-wrapper">
-                <span class="catalog__name">Cat Energy slim 1000 г</span>
+                <span class="catalog__name">Cat Energy slim <br>1000 г</span>
                 <dl class="catalog__description-list">
                   <div class="catalog__description-wrapper">
                     <dt class="catalog__description-item">Масса</dt>
@@ -269,7 +254,7 @@
                 alt="Cat Energy slim 500 г"
               />
               <div class="catalog__text-wrapper">
-                <span class="catalog__name">Cat Energy slim 500 г</span>
+                <span class="catalog__name">Cat Energy slim <br>500 г</span>
                 <dl class="catalog__description-list">
                   <div class="catalog__description-wrapper">
                     <dt class="catalog__description-item">Масса</dt>
@@ -396,7 +381,13 @@
         </div>
       </div>
       <div class="contacts__map map">
-        <span class="visually-hidden">Карта</span>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002992!2d30.32085871598145!3d59.938719169054366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661942775700!5m2!1sru!2sru"
+        width="320"
+        height="362"
+        allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
+      ></iframe>
       </div>
     </section>
     <footer class="footer">
@@ -495,5 +486,6 @@
         </a>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

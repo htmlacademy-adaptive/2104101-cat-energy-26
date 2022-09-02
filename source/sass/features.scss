@@ -12,6 +12,12 @@
   margin: 0;
   padding: 0;
   padding-bottom: 47px;
+  counter-reset: program-counter;
+}
+
+.features-list__item-wrapper {
+  position: relative;
+  counter-increment: program-counter;
 }
 
 .features-list__item {
@@ -25,48 +31,59 @@
   margin: 0;
 }
 
-.features-list__item--composition::before {
+.features-list__item::after {
   content: "";
-  background-image: url("../img/features_composition.svg");
-  background-repeat: no-repeat;
+  background-color: $basic-green;
   width: 60px;
   height: 60px;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+}
+
+.features-list__item--composition::before {
+  content: "";
+  background-image: url("../img/icon_leaf.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  top: 14px;
+  left: 15px;
 }
 
 .features-list__item--flour::before {
   content: "";
-  background-image: url("../img/features__flour.svg");
+  background-image: url("../img/icon_tub.svg");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
+  width: 29px;
+  height: 31px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 13px;
+  left: 15px;
 }
 
 .features-list__item--food::before {
   content: "";
-  background-image: url("../img/features_food.svg");
+  background-image: url("../img/icon_eat.svg");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
+  width: 25px;
+  height: 30px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15px;
+  left: 18px;
 }
 
 .features-list__item--month::before {
   content: "";
-  background-image: url("../img/features_month.svg");
+  background-image: url("../img/icon_alarm.svg");
   background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
+  width: 32px;
+  height: 33px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 13px;
+  left: 14px;
 }
 
 @media (min-width: $tablet-width) {
@@ -93,6 +110,50 @@
     line-height: 24px;
     padding-top: 151px;
     padding-bottom: 57px;
+  }
+
+  .features-list__item::after {
+    content: "";
+    background-color: $basic-green;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .features-list__item--composition::before {
+    top: 65px;
+    left: 25px;
+  }
+
+  .features-list__item--flour::before {
+    top: 64px;
+    left: 25px;
+  }
+
+  .features-list__item--food::before {
+    top: 65px;
+    left: 28px;
+  }
+
+  .features-list__item--month::before {
+    top: 63px;
+    left: 24px;
+  }
+
+  .features-list__item-wrapper::after {
+    content: counter(program-counter);
+    font-family: "Oswald", sans-serif;
+    width: 112px;
+    height: 280px;
+    position: absolute;
+    font-size: 280px;
+    color: $basic-gray;
+    z-index: -1;
+    top: 140px;
+    left: 118px;
   }
 }
 

@@ -1,5 +1,6 @@
 .button {
   width: 100%;
+  display: block;
   padding: 10px 44px;
   text-decoration: none;
   color: #ffffff;
@@ -17,9 +18,30 @@
   background-color: $basic-green;
 }
 
+.button--basic:hover {
+  background-color: #5eaa2f;
+}
+
+.button--basic:focus {
+  background-color: #5eaa2f;
+  color: #ffffff30;
+  outline: none;
+}
+
 .button--secondary {
   background-color: #f2f2f2;
   color: #000000;
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:focus {
+  background-color: #ebebeb;
+  color: #44444430;
+  outline: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: $tablet-width) {

@@ -21,34 +21,45 @@
   margin: 0;
   padding-bottom: 30px;
   padding-left: 72px;
-  position: relative;
+}
+
+.goal__item::after {
+  content: "";
+  background-color: $basic-green;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  border-radius: 50%;
 }
 
 .goal__item--slim::before {
   content: "";
-  background-image: url("../img/goal_cat_1.svg");
+  background-image: url("../img/goal_cat-slim.svg");
   background-repeat: no-repeat;
   width: 50px;
   height: 53px;
   position: absolute;
   top: 21px;
-  left: 20px;
+  left: 29px;
+  z-index: 2;
 }
 
 .goal__item--weight::before {
   content: "";
-  background-image: url("../img/goal_cat_2.svg");
+  background-image: url("../img/goal_cat-pro.svg");
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
   position: absolute;
   left: 13px;
-  top: 24px;
+  top: 35px;
+  z-index: 2;
 }
 
 .goal__item-description {
   padding-bottom: 23px;
-  position: relative;
   margin: 0;
 }
 
@@ -86,13 +97,38 @@
   top: 20px;
 }
 
-@media (min-width: $tablet-width) {
-  .goal__item-description::after {
-    display: none;
-  }
+.goal__link:focus {
+  opacity: 0.3;
+  outline: none;
+}
 
+@media (min-width: $tablet-width) {
   .goal__item {
     padding: 77px 316px 53px 48px;
+  }
+
+  .goal__item::after {
+    content: "";
+    background-color: $basic-green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 92px;
+    right: 62px;
+    left: auto;
+    border-radius: 50%;
+  }
+
+  .goal__item--slim::before {
+    content: "";
+    background-image: url("../img/goal_cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    top: 21px;
+    left: 29px;
+    z-index: 2;
   }
 
   .goal__item-title {
@@ -114,17 +150,6 @@
     padding: 4px 57px 4px 0;
   }
 
-  .goal__item--slim::before {
-    content: "";
-    background-image: url("../img/goal_cat_1.svg");
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 0;
-    right: 500px;
-  }
-
   .goal__item--slim {
     margin-bottom: 30px;
   }
@@ -143,7 +168,7 @@
   }
 
   .goal__item {
-    padding: 41px 51px 55px 52px;
+    padding: 77px 51px 55px 52px;
   }
 
   .goal__item-title {
@@ -161,5 +186,22 @@
 
   .goal__item--weight {
     margin-bottom: 71px;
+  }
+
+
+  .goal__item::after {
+    width: 100px;
+    height: 106px;
+    top: 41px;
+    right: auto;
+    left: 52px;
+  }
+
+  .goal__link::before {
+    width: 32px;
+    height: 10px;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
   }
 }
