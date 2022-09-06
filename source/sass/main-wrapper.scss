@@ -47,24 +47,18 @@
   .main-wrapper__promo {
     background-image: none;
     padding: 0;
+    position: static;
   }
 
   .main-wrapper__block {
     padding-bottom: 526px;
+    position: relative;
   }
 
   .main-wrapper__button {
     width: 244px;
     padding-top: 49px;
     padding-left: 120px;
-  }
-
-  .main-wrapper__promo {
-    position: static;
-  }
-
-  .main-wrapper__block {
-    position: relative;
   }
 
   .main-wrapper__image {
@@ -141,10 +135,10 @@
 
     @media (min-width: 1440px) and (min-resolution: 2dppx) {
       background-image: linear-gradient(
-        hsl(97 53% 47% / 85%),
-        hsl(97 53% 47% / 85%)
-      ),
-      url("../img/index-background-desktop@2x.jpg");
+          hsl(97 53% 47% / 85%),
+          hsl(97 53% 47% / 85%)
+        ),
+        url("../img/index-background-desktop@2x.jpg");
       background-size: auto 696px;
     }
   }
