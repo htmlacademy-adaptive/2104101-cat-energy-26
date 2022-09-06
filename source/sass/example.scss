@@ -74,7 +74,7 @@
 
   .example__wrapper {
     border-top: 1px solid #e6e6e6;
-    padding: 43px 30px 40px;
+    padding: 43px 30px 100px;
   }
 
   .example__title {
@@ -123,13 +123,17 @@
   .example__text--time {
     width: 142px;
   }
+
+  .example_part-slider {
+    padding-top: 104px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 70px 110px 75px;
+    padding: 70px 110px 85px;
   }
 
   .example__description {
@@ -148,5 +152,9 @@
   .example__subtitle {
     width: 100%;
     text-align: left;
+  }
+
+  .example_part-slider {
+    padding-top: 0;
   }
 }

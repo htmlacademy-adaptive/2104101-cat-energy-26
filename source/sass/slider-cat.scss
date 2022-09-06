@@ -1,3 +1,7 @@
+img {
+  object-fit: contain;
+}
+
 .slider {
   margin: 0 auto;
   width: 280px;
@@ -5,11 +9,7 @@
   position: relative;
 }
 
-img {
-  max-width: 100%;
-  min-height: auto;
-  object-fit: contain;
-}
+
 
 .slider__image-container {
   display: flex;
@@ -33,6 +33,7 @@ img {
   content: "";
   position: absolute;
   background-image: url("../img/slider_stat--default.svg");
+  background-repeat: no-repeat;
   width: 40px;
   height: 100%;
   top: 0;
@@ -41,4 +42,18 @@ img {
   border: none;
   padding: 0;
   margin-left: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    margin: 0 auto;
+    width: 560px;
+    height: 512px;
+    position: relative;
+  }
+
+  .slider__image {
+    width: 560px;
+    height: 512px;
+  }
 }

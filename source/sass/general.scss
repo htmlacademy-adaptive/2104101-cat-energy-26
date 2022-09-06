@@ -36,6 +36,7 @@
   line-height: 18px;
   background-color: #ffffff;
   margin: 0 auto;
+  width: 320px;
 }
 
 .visually-hidden {
@@ -49,11 +50,17 @@
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+  min-height: auto;
+}
+
 .general-container {
   padding-left: 20px;
   padding-right: 20px;
   overflow-x: hidden;
 }
+
 
 @media (min-width: $tablet-width) {
   .general-container {
@@ -67,11 +74,19 @@
     padding-right: 67px;
     overflow-x: hidden;
   }
+
+  .page-body {
+    width: 768px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .general-container {
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  .page-body {
+    width: 1440px;
   }
 }
