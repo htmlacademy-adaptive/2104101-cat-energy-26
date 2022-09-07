@@ -4,23 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" /><!-- 32×32 -->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page-body">
+  <body class="page-body page-body--index">
     <header class="main-header">
       <div class="main-header__promo-container">
         <nav
           class="navigation main-header__navigation navigation--closed navigation--nojs"
         >
           <div class="navigation__logo-wrapper">
-            <a class="navigation__logo--img"
-              ><img
-                class="navigation__logo-image"
-                src="img/header_logo.svg"
-                width="33"
-                height="36"
-                alt="Логотип."
-            /></a>
+            <a class="navigation__logo--img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/header_logo-desktop.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/header_logo-tablet.svg"
+                />
+                <img
+                  class="navigation__logo-image"
+                  src="img/header_logo-mobile.svg"
+                  width="33"
+                  height="36"
+                  alt="Логотип."
+                /> </picture
+            ></a>
             <a class="navigation__logo--text">
               <img
                 class="navigation__logo-text"
@@ -37,12 +51,14 @@
           <div class="navigation__wrapper">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--active" href="index.html">Главная</a>
+                <a
+                  class="navigation__link navigation__link--active"
+                  href="index.html"
+                  >Главная</a
+                >
               </li>
               <li class="navigation__item">
-                <a
-                  class="navigation__link "
-                  href="catalog.html"
+                <a class="navigation__link" href="catalog.html"
                   >Каталог продукции</a
                 >
               </li>
@@ -64,13 +80,32 @@
               Функциональное питание для котов
             </h1>
             <p class="main-wrapper__slogan">Занялся собой? Займись котом!</p>
-            <img
-              class="main-wrapper__image"
-              src="./img/main-wrapper__image-mobile.png"
-              width="280"
-              height="270"
-              alt="Упаковка корма"
-            />
+            <picture>
+              <source
+                class="main-wrapper__image"
+                media="(min-width: 1440px)"
+                srcset="
+                  img/main-wrapper__image-desktop.png    1x,
+                  img/main-wrapper__image-desktop@2x.png 2x
+                "
+              />
+              <source
+                class="main-wrapper__image"
+                media="(min-width: 768px)"
+                srcset="
+                  img/main-wrapper__image-tablet.jpg    1x,
+                  img/main-wrapper__image-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="main-wrapper__image"
+                src="img/main-wrapper__image-mobile.png"
+                srcset="img/main-wrapper__image-mobile@2x.png 2x"
+                width="280"
+                height="270"
+                alt="Упаковка корма"
+              />
+            </picture>
           </div>
 
           <div class="main-wrapper__button">
@@ -181,22 +216,43 @@
             <div class="example__slider slider">
               <div class="slider__image-container">
                 <div class="slider__image-wrapper">
-                  <img
-                    class="slider__image slider__image--fat"
-                    src="img/slider_cat_before--mobile.png"
-                    alt="Толстый кот."
-                    width="280"
-                    height="256"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/slider_cat_before--tablet.png    1x,
+                        img/slider_cat_before--tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      class="slider__image slider__image--fat"
+                      src="img/slider_cat_before--mobile.png"
+                      alt="Толстый кот."
+                      width="280"
+                      height="256"
+                      srcset="img/slider_cat_before--mobile@2x.png 2x"
+                    />
+                  </picture>
                 </div>
                 <div class="slider__image-wrapper">
-                  <img
-                    class="slider__image slider__image--slim"
-                    src="img/slider_cat_after--mobile.png"
-                    alt="Стройный кот."
-                    width="280"
-                    height="256"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/slider_cat_after--tablet.png    1x,
+                        img/slider_cat_after--tablet@2x.png 2x
+                      "
+                      ;
+                    />
+                    <img
+                      class="slider__image slider__image--slim"
+                      src="img/slider_cat_after--mobile.png"
+                      alt="Стройный кот."
+                      width="280"
+                      height="256"
+                      srcset="img/slider_cat_after--mobile@2x.png 2x"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="slider__range-toggle">

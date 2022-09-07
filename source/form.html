@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" /><!-- 32×32 -->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -12,14 +16,28 @@
         class="navigation main-header__navigation navigation--closed navigation--nojs"
       >
         <div class="navigation__logo-wrapper">
-          <a class="navigation__logo--img"
-            ><img
-              class="navigation__logo-image"
-              src="img/header_logo.svg"
-              width="33"
-              height="36"
-              alt="Логотип."
-          /></a>
+          <a class="navigation__logo--img">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/header_logo-desktop.svg"
+                width="202"
+                height="59"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/header_logo-tablet.svg"
+                width="174"
+                height="52"
+              />
+              <img
+                class="navigation__logo-image"
+                src="img/header_logo-mobile.svg"
+                width="33"
+                height="36"
+                alt="Логотип."
+              /> </picture
+          ></a>
           <a class="navigation__logo--text">
             <img
               class="navigation__logo-text"

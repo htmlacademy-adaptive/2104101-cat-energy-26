@@ -42,6 +42,11 @@
   align-items: center;
 }
 
+.catalog__foto {
+  width: 140px;
+  margin: 0 auto;
+}
+
 .catalog__item::after {
   content: "";
   height: 1px;
@@ -108,6 +113,20 @@
 
   .catalog__text-wrapper {
     width: 100%;
+  }
+
+  .catalog__foto {
+    width: 161px;
+    height: 172px;
+    margin: -45px auto 0;
+    padding-bottom: 34px;
+    display: block;
+  }
+
+  .catalog__foto--big {
+    width: 168px;
+    height: 206px;
+    margin: -73px auto 0;
   }
 
   .catalog__name {

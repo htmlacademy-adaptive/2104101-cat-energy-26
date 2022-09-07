@@ -150,9 +150,10 @@
     height: 280px;
     position: absolute;
     font-size: 280px;
+    line-height: 280px;
     color: $basic-gray;
     z-index: -1;
-    top: 140px;
+    top: 0;
     left: 118px;
   }
 }
