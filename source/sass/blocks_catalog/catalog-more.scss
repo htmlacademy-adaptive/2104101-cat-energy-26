@@ -46,6 +46,12 @@
   left: -20px;
 }
 
+@media (min-width: $mobile-width-only) {
+  .catalog-more__title br {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .catalog-more__wrapper {
     border: 2px solid $basic-gray;
@@ -84,5 +90,17 @@
     font-size: 16px;
     line-height: 18px;
     padding: 0 0 87px 0;
+  }
+
+  .catalog-more__title::before {
+    content: "";
+    background-image: url("../../img/icon_plus.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    margin-left: -30px;
   }
 }

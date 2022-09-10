@@ -1,0 +1,17 @@
+.main-header__navigation {
+  padding: 14px 20px 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__navigation {
+    padding: 24px 30px 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__navigation {
+    padding: 53px 110px 0;
+    margin: 0;
+  }
+}

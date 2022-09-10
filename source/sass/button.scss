@@ -31,6 +31,7 @@
 .button--secondary {
   background-color: #f2f2f2;
   color: #000000;
+  font-size: 16px;
 }
 
 .button--secondary:hover {
@@ -46,8 +47,14 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    padding: 14px 26px;
-    font-size: 20px;
+    padding: 10px 26px;
+    font-size: 16px;
     line-height: 20px;
+  }
+
+  .button--tablet {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 20px;
   }
 }

@@ -41,6 +41,7 @@
   .contacts__adress {
     font-size: 16px;
     width: 159px;
+    text-align: right;
   }
 
   .contacts__title--street {
@@ -49,6 +50,7 @@
 
   .contacts__adress-container {
     padding: 56px 70px 62px;
+    box-sizing: border-box;
   }
 
   .contacts__map iframe {
@@ -73,5 +75,9 @@
 
   .contacts__map iframe {
     width: 1440px;
+  }
+
+  .contacts__adress {
+    text-align: left;
   }
 }

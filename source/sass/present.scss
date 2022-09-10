@@ -7,11 +7,6 @@
   background-repeat: no-repeat;
 }
 
-.catalog-main-container__present {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-
 .present__title {
   color: #ffffff;
   font-size: 16px;
@@ -33,7 +28,7 @@
   position: absolute;
   right: 50%;
   margin-right: -39px;
-  top: 48px;
+  top: 60px;
 }
 
 @media (min-width: $tablet-width) {
@@ -82,7 +77,8 @@
       url("../../img/background_present--desktop.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 80px;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 
   .catalog-main-container__present {
@@ -98,5 +94,9 @@
         url("../../img/background_present--desktop@2x.jpg");
       background-size: 245px auto;
     }
+  }
+
+  .present__title::before {
+    left: 83px;
   }
 }
