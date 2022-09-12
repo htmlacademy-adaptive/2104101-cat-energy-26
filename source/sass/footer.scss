@@ -3,7 +3,13 @@
 }
 
 .footer__logo-text-wrapper {
-  padding: 39px 96px 32px;
+  padding: 41px 96px 32px;
+  align-items: center;
+  display: flex;
+}
+
+.footer__logo-text {
+  display: block;
 }
 
 .footer__socials {
@@ -14,60 +20,115 @@
 }
 
 .footer__socials-list {
-  margin: 0;
-  padding: 20px 74px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
-  width: 132px;
+  align-items: center;
+  justify-content: center;
   list-style: none;
 }
 
 .footer__socials-link {
-  padding: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 14px;
+  padding-left: 14px;
 }
 
-.academy {
+.footer__social-icon,
+.footer__academy__logo-icon {
+  fill: #666666;
+}
+
+.footer__socials-link:hover .footer__social-icon {
+  fill: $basic-green;
+}
+
+.footer__socials-link:active .footer__social-icon {
+  fill: $basic-green;
+  opacity: 30%;
+}
+
+.footer__academy__logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 22px 20px;
+  align-items: center;
+  text-decoration: none;
+  color: #444444;
 }
 
-.academy__name {
+.footer__academy__name {
   color: #444444;
   font-size: 16px;
-  font-weight: 18px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.footer__academy__logo:hover .footer__academy__logo-icon {
+  fill: $basic-green;
+}
+
+.footer__academy__logo:active {
+  opacity: 30%;
+}
+
+.footer__academy__logo:active.footer__academy__logo-icon {
+  fill: $basic-green;
+  opacity: 30%;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 58px 30px 55px;
   }
 
   .footer__logo-text-wrapper {
-    width: 128px;
     padding: 0;
+    padding-right: 142px;
   }
 
   .footer__socials-list {
-    width: 132px;
     padding: 0;
   }
 
-  .academy {
+  .footer__academy {
     width: 165px;
     padding: 0;
   }
 
   .footer__socials {
     border: none;
+    margin: 0;
+    padding-right: 118px;
+  }
+
+  .footer__academy__logo {
+    padding: 0;
+    align-items: flex-start;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
     padding: 57px 110px;
+    align-items: center;
+  }
+
+  .footer__logo-text-wrapper {
+    padding-right: 400px;
+  }
+
+  .footer__socials {
+    padding-right: 370px;
+  }
+
+  .footer__academy__logo {
+    align-items: center;
   }
 }

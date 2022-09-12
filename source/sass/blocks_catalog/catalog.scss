@@ -1,11 +1,9 @@
-
-
 .catalog__title {
   font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 41px;
   position: relative;
   margin: 0;
@@ -32,7 +30,7 @@
 
 .catalog__item {
   padding-top: 19px;
-  padding-bottom: 18px;
+  padding-bottom: 25px;
   position: relative;
 }
 
@@ -45,6 +43,7 @@
 .catalog__foto {
   width: 140px;
   margin: 0 auto;
+  display: block;
 }
 
 .catalog__item::after {
@@ -69,7 +68,7 @@
   line-height: 20px;
   text-transform: uppercase;
   width: 76px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 }
 
 .catalog__description-wrapper {
@@ -81,11 +80,21 @@
 
 .catalog__description-list {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+}
+
+.catalog__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.catalog__main-container__present {
+  margin-top: 37px;
+  margin-bottom: 35px;
 }
 
 @media (max-width: $mobile-width-only) {
-  br {
+  .catalog__name br {
     display: none;
   }
 }
@@ -98,13 +107,13 @@
   .catalog__list {
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 141px 60px;
+    gap: 143px 60px;
     padding-bottom: 68px;
   }
 
   .catalog__item {
     background-color: $basic-gray;
-    padding: 0 36px 39px;
+    padding: 0 39px 39px;
   }
 
   .catalog__item-wrapper {
@@ -118,7 +127,7 @@
   .catalog__foto {
     width: 161px;
     height: 172px;
-    margin: -45px auto 0;
+    margin: -48px auto 0;
     padding-bottom: 34px;
     display: block;
   }
@@ -127,6 +136,7 @@
     width: 168px;
     height: 206px;
     margin: -73px auto 0;
+    padding-bottom: 27px;
   }
 
   .catalog__name {
@@ -136,7 +146,6 @@
     line-height: 24px;
     text-align: center;
   }
-
 
   .catalog__title {
     font-size: 60px;
@@ -148,7 +157,7 @@
   .catalog__description-wrapper {
     font-size: 16px;
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -160,6 +169,11 @@
   .catalog__description-list {
     margin-bottom: 33px;
   }
+
+  .catalog__main-container__present {
+    margin-top: 69px;
+    margin-bottom: 78px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -167,5 +181,30 @@
     grid-template-columns: repeat(4, 245px);
     gap: 143px 80px;
     padding-bottom: 76px;
+  }
+
+  .catalog__title {
+    padding-top: 74px;
+  }
+
+  .catalog__foto {
+    padding-bottom: 43px;
+  }
+
+  .catalog__foto--big {
+    width: 168px;
+    height: 206px;
+    margin: -78px auto 0;
+    padding-bottom: 40px;
+  }
+
+  .catalog__name {
+    line-height: 21px;
+    padding-bottom: 18px;
+  }
+
+  .catalog__main-container__present {
+    margin-top: 75px;
+    margin-bottom: 0;
   }
 }
