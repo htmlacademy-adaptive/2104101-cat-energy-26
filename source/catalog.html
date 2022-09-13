@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи - каталог</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon.ico" /><!-- 32×32 -->
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -83,6 +85,21 @@
             <div class="catalog__item-wrapper">
               <picture>
                 <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/catalog/catalog_1-tablet.webp    1x,
+                    img/catalog/catalog_1-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/catalog/catalog_1.webp    1x,
+                    img/catalog/catalog_1@2x.webp 2x
+                  "
+                />
+                <source
                   media="(min-width: 768px)"
                   srcset="
                     img/catalog/catalog_1-tablet.png    1x,
@@ -126,6 +143,21 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <picture>
+                <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/catalog/catalog_2-tablet.webp    1x,
+                  img/catalog/catalog_2-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/catalog/catalog_2.webp    1x,
+                  img/catalog/catalog_2@2x.webp 2x
+                "
+              />
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -171,6 +203,21 @@
             <div class="catalog__item-wrapper">
               <picture>
                 <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/catalog/catalog_3-tablet.webp    1x,
+                  img/catalog/catalog_3-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/catalog/catalog_3.webp    1x,
+                  img/catalog/catalog_3@2x.webp 2x
+                "
+              />
+                <source
                   media="(min-width: 768px)"
                   srcset="
                     img/catalog/catalog_3-tablet.png    1x,
@@ -214,6 +261,21 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <picture>
+                <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/catalog/catalog_4-tablet.webp    1x,
+                  img/catalog/catalog_4-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/catalog/catalog_4.webp    1x,
+                  img/catalog/catalog_4@2x.webp 2x
+                "
+              />
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -260,6 +322,21 @@
             <div class="catalog__item-wrapper">
               <picture>
                 <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/catalog/catalog_5-tablet.webp    1x,
+                  img/catalog/catalog_5-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/catalog/catalog_5.webp    1x,
+                  img/catalog/catalog_5@2x.webp 2x
+                "
+              />
+                <source
                   media="(min-width: 768px)"
                   srcset="
                     img/catalog/catalog_5-tablet.png    1x,
@@ -300,6 +377,21 @@
           <li class="catalog__item">
             <div class="catalog__item-wrapper">
               <picture>
+                <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/catalog/catalog_6-tablet.webp    1x,
+                  img/catalog/catalog_6-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/catalog/catalog_6.webp    1x,
+                  img/catalog/catalog_6@2x.webp 2x
+                "
+              />
                 <source
                   media="(min-width: 768px)"
                   srcset="
@@ -342,6 +434,21 @@
             <div class="catalog__item-wrapper">
               <picture>
                 <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/catalog/catalog_7-tablet.webp    1x,
+                  img/catalog/catalog_7-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/catalog/catalog_7.webp    1x,
+                  img/catalog/catalog_7@2x.webp 2x
+                "
+              />
+                <source
                   media="(min-width: 768px)"
                   srcset="
                     img/catalog/catalog_7-tablet.png    1x,
@@ -382,7 +489,9 @@
           <li class="catalog-more catalog-more__wrapper">
             <span class="catalog-more__image"></span>
             <span class="visually-hidden">Плюс</span>
-            <h2 class="catalog-more__title">Показать еще <br>100500 товаров</h2>
+            <h2 class="catalog-more__title">
+              Показать еще <br />100500 товаров
+            </h2>
             <p class="catalog-more__text">
               На самом деле вкусов гораздо больше!
             </p>
@@ -466,7 +575,7 @@
           <div class="present catalog__main-container__present">
             <div class="present__container">
               <h2 class="present__title">
-                Закажите все<br>и получите чехол для кота в подарок!
+                Закажите все<br />и получите чехол для кота в подарок!
               </h2>
             </div>
           </div>
@@ -476,7 +585,7 @@
     <section class="contacts contacts--background">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__adress-container">
-        <p class="contacts__title">приглашаем<br>к сотрудничеству дилеров!</p>
+        <p class="contacts__title">приглашаем<br />к сотрудничеству дилеров!</p>
         <div class="contacts__adress-wrapper">
           <address class="contacts__adress contacts__title--street">
             ул. Большая Конюшенная, д. 19/8

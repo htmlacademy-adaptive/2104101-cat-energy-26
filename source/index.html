@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png" />
@@ -195,8 +195,8 @@
             <li class="features-list__item features-list__item--month">
               <div class="features-list__item-wrapper">
                 <p class="features-list__description">
-                  Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего
-                  питомца!
+                  Уже через месяц наслаждайтесь изменениями к лучшему
+                  <br />вашего питомца!
                 </p>
               </div>
             </li>
@@ -246,6 +246,21 @@
                 <div class="slider__image-wrapper">
                   <picture>
                     <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/slider_cat_before--tablet.webp    1x,
+                      img/slider_cat_before--tablet@2x.webp 2x
+                    "
+                  />
+                    <source
+                    type="image/webp"
+                    srcset="
+                      img/slider_cat_before--mobile.webp   1x,
+                      img/slider_cat_before--mobile@2x.webp 2x
+                    "
+                  />
+                    <source
                       media="(min-width: 768px)"
                       srcset="
                         img/slider_cat_before--tablet.png    1x,
@@ -255,15 +270,32 @@
                     <img
                       class="slider__image slider__image--fat"
                       src="img/slider_cat_before--mobile.png"
+                      srcset="img/slider_cat_before--mobile@2x.png 2x"
                       alt="Толстый кот."
                       width="280"
                       height="256"
-                      srcset="img/slider_cat_before--mobile@2x.png 2x"
+
                     />
                   </picture>
                 </div>
                 <div class="slider__image-wrapper">
                   <picture>
+                    <source
+                    type="image/webp"
+                    srcset="
+                      img/slider_cat_after--tablet.webp    1x,
+                      img/slider_cat_after--tablet@2x.webp 2x
+                    "
+                    ;
+                  />
+                    <source
+                    type="image/webp"
+                    srcset="
+                      img/slider_cat_after--mobile.webp    1x,
+                      img/slider_cat_after--mobile@2x.webp 2x
+                    "
+                    ;
+                  />
                     <source
                       media="(min-width: 768px)"
                       srcset="
@@ -284,7 +316,34 @@
                 </div>
               </div>
               <div class="slider__range-toggle">
-                <button type="button" class="slider__range-button"></button>
+                <svg
+                class="slider__range-toggle-icon"
+                aria-hidden="true"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="38"
+                    height="38"
+                    rx="19"
+                    fill="#fff"
+                  />
+                  <path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" fill="#666" />
+                  <rect
+                    x="1"
+                    y="1"
+                    width="38"
+                    height="38"
+                    rx="19"
+                    stroke="#666"
+                    stroke-width="2"
+                  />
+                </svg>
               </div>
             </div>
           </div>

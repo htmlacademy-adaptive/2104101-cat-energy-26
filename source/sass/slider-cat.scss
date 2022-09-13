@@ -17,6 +17,7 @@ img {
 .slider__image {
   height: 100%;
   object-fit: cover;
+  position: relative;
 }
 
 .slider__image--fat {
@@ -27,20 +28,49 @@ img {
   object-position: right;
 }
 
-.slider__range-button {
-  content: "";
+.slider__range-toggle {
   position: absolute;
-  background-image: url("../img/slider_stat--default.svg");
-  background-repeat: no-repeat;
-  width: 40px;
+  width: 4px;
   height: 100%;
+  background-color: #666666;
   top: 0;
-  left: 50%;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin-left: -20px;
+  right: 50%;
 }
+
+.slider__range-toggle-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: -18px;
+}
+
+.slider__range-toggle:hover {
+  background-color: $basic-green;
+}
+
+.slider__range-toggle:hover .slider__range-toggle-icon path {
+  fill: $basic-green;
+}
+
+.slider__range-toggle:hover .slider__range-toggle-icon rect {
+  stroke: $basic-green;
+}
+
+.slider__range-toggle:active {
+  background-color: #5eaa2f;
+  opacity: 60%;
+}
+
+.slider__range-toggle:active .slider__range-toggle-icon path {
+  fill: #5eaa2f;
+  opacity: 60%;
+}
+
+.slider__range-toggle:active .slider__range-toggle-icon rect {
+  stroke: #5eaa2f;
+  opacity: 60%;
+}
+
 
 @media (min-width: $tablet-width) {
   .slider {
