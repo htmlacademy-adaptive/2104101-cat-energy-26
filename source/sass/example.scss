@@ -18,6 +18,7 @@
 .example__description {
   margin: 0;
   margin-bottom: 20px;
+  z-index: 2;
 }
 
 .example__item-container {
@@ -60,6 +61,10 @@
 .example__item-wrapper {
   position: relative;
   padding-bottom: 34px;
+}
+
+.example__part-text {
+  z-index: 2;
 }
 
 .example__text {
@@ -105,7 +110,6 @@
     background-color: #eaeaea;
     bottom: 0;
     left: 0;
-    z-index: -5;
   }
 
   .example__item-container {
@@ -183,6 +187,7 @@
     display: flex;
     justify-content: space-between;
     padding: 70px 110px 70px;
+    border: none;
   }
 
   .example__description {
@@ -219,5 +224,9 @@
 
   .example__item-container {
     padding-bottom: 55px;
+  }
+
+  .example__text {
+    background-color: transparent;
   }
 }

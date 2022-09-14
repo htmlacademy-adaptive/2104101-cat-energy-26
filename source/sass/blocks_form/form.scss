@@ -280,8 +280,12 @@
 }
 
 .form__input-icon {
-  stroke: #222222;
   padding-right: 10px;
+}
+
+.form__input-icon--email {
+  fill: none;
+  stroke: #000000;
 }
 
 .form__input-wrapper:focus-within .form__input-icon {
@@ -294,6 +298,10 @@
 
 .form__contacts {
   padding-bottom: 8px;
+}
+
+.form__button {
+  font-size: 16px;
 }
 
 @media (min-width: $tablet-width) {
