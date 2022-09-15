@@ -9,8 +9,10 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
   </head>
-  <body class="page-body page-body--index">
+  <body class="page-body page__body page__body--index">
     <header class="main-header">
       <div class="main-header__promo-container">
         <nav
@@ -32,7 +34,7 @@
                   src="img/header_logo-mobile.svg"
                   width="33"
                   height="37"
-                  alt="Логотип."
+                  alt="Логотип Кэт Энерджи."
                 /> </picture
             ></a>
             <a class="navigation__logo--text">
@@ -46,7 +48,7 @@
             </a>
           </div>
           <button class="navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Меню</span>
           </button>
           <div class="navigation__wrapper">
             <ul class="navigation__list">
@@ -134,7 +136,7 @@
           <div class="main-wrapper__button">
             <a
               class="main-wrapper__button-link button button--basic button--tablet"
-              href="#"
+              href="form.html"
               >Подобрать программу</a
             >
           </div>
@@ -151,7 +153,7 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="goal__link" href="#">каталог slim</a>
+              <a class="goal__link" href="catalog.html">каталог slim</a>
             </li>
             <li class="goal__item goal__item--weight">
               <h3 class="goal__item-title goal__item-title--weight">
@@ -161,7 +163,7 @@
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="goal__link" href="#">каталог pro</a>
+              <a class="goal__link" href="catalog.html">каталог pro</a>
             </li>
           </ul>
         </section>
@@ -246,20 +248,20 @@
                 <div class="slider__image-wrapper">
                   <picture>
                     <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      img/slider_cat_before--tablet.webp    1x,
-                      img/slider_cat_before--tablet@2x.webp 2x
-                    "
-                  />
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/slider_cat_before--tablet.webp    1x,
+                        img/slider_cat_before--tablet@2x.webp 2x
+                      "
+                    />
                     <source
-                    type="image/webp"
-                    srcset="
-                      img/slider_cat_before--mobile.webp   1x,
-                      img/slider_cat_before--mobile@2x.webp 2x
-                    "
-                  />
+                      type="image/webp"
+                      srcset="
+                        img/slider_cat_before--mobile.webp    1x,
+                        img/slider_cat_before--mobile@2x.webp 2x
+                      "
+                    />
                     <source
                       media="(min-width: 768px)"
                       srcset="
@@ -274,26 +276,25 @@
                       alt="Толстый кот."
                       width="280"
                       height="256"
-
                     />
                   </picture>
                 </div>
                 <div class="slider__image-wrapper">
                   <picture>
                     <source
-                    type="image/webp"
-                    srcset="
-                      img/slider_cat_after--tablet.webp    1x,
-                      img/slider_cat_after--tablet@2x.webp 2x
-                    "
-                  />
+                      type="image/webp"
+                      srcset="
+                        img/slider_cat_after--tablet.webp    1x,
+                        img/slider_cat_after--tablet@2x.webp 2x
+                      "
+                    />
                     <source
-                    type="image/webp"
-                    srcset="
-                      img/slider_cat_after--mobile.webp    1x,
-                      img/slider_cat_after--mobile@2x.webp 2x
-                    "
-                  />
+                      type="image/webp"
+                      srcset="
+                        img/slider_cat_after--mobile.webp    1x,
+                        img/slider_cat_after--mobile@2x.webp 2x
+                      "
+                    />
                     <source
                       media="(min-width: 768px)"
                       srcset="
@@ -314,8 +315,8 @@
               </div>
               <div class="slider__range-toggle">
                 <svg
-                class="slider__range-toggle-icon"
-                aria-hidden="true"
+                  class="slider__range-toggle-icon"
+                  aria-hidden="true"
                   width="40"
                   height="40"
                   viewBox="0 0 40 40"

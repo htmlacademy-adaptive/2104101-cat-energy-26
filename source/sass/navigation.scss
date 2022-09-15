@@ -148,7 +148,7 @@
   .navigation__list {
     position: static;
     display: grid;
-    grid-template-columns: max-content max-content max-content;
+    grid-template-columns: 64px 156px 153px;
     column-gap: 34px;
     width: 440px;
     background-color: transparent;
@@ -195,6 +195,7 @@
 
   .navigation__list {
     width: 483px;
+    grid-template-columns: 72px 172px 172px;
   }
 
   .navigation__logo-image {
