@@ -161,7 +161,7 @@
 
   .features-list__item-wrapper::after {
     content: counter(program-counter);
-    font-family: "Oswald", sans-serif;
+    font-family: $title-font;
     width: 112px;
     height: 280px;
     position: absolute;

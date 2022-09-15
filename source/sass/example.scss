@@ -7,7 +7,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -159,7 +159,7 @@
     line-height: 14px;
     width: 114px;
     background-color: #ffffff;
-    top: 62px;
+    top: 64px;
     left: 50%;
     margin-left: -57px;
   }
@@ -227,6 +227,6 @@
   }
 
   .example__text {
-    background-color: transparent;
+    background-color: #eaeaea;
   }
 }

@@ -1,5 +1,6 @@
 .main-wrapper__promo {
   position: relative;
+  background-color: $basic-green;
   background-image: linear-gradient(
       hsl(97 53% 47% / 85%),
       hsl(97 53% 47% / 85%)
@@ -11,8 +12,14 @@
   padding-bottom: 164px;
 }
 
+@media (min-resolution: 2dppx) {
+  .main-wrapper__promo {
+    background-image: url("../img/index_background@2x.jpg");
+  }
+}
+
 .main-wrapper__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -22,7 +29,7 @@
 }
 
 .main-wrapper__slogan {
-  font-family: "Oswald", sans-serif;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -47,6 +54,7 @@
 @media (min-width: $tablet-width) {
   .main-wrapper__promo {
     background-image: none;
+    background-color: transparent;
     padding: 0;
     position: static;
   }
@@ -54,12 +62,14 @@
   .main-wrapper__block {
     padding-bottom: 525px;
     position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .main-wrapper__button {
     width: 244px;
     padding-top: 49px;
-    padding-left: 120px;
+    padding-left: 90px;
     padding-bottom: 0;
   }
 
@@ -78,7 +88,7 @@
     color: #000000;
     padding-top: 62px;
     padding-bottom: 39px;
-    padding-left: 117px;
+    padding-left: 87px;
     text-align: left;
     width: 416px;
     margin: 0;
@@ -89,7 +99,7 @@
     line-height: 20px;
     text-align: left;
     color: #000000;
-    padding-left: 119px;
+    padding-left: 87px;
     padding-top: 0;
   }
 }
@@ -98,7 +108,7 @@
   .main-wrapper__title {
     padding-top: 110px;
     padding-bottom: 40px;
-    padding-left: 190px;
+    padding-left: 160px;
     text-align: left;
   }
 
@@ -117,37 +127,13 @@
     line-height: 20px;
     text-align: left;
     color: #000000;
-    padding-left: 190px;
+    padding-left: 160px;
     padding-top: 0;
-  }
-
-  .page-body--index::after {
-    content: "";
-    position: absolute;
-    background-image: linear-gradient(
-        hsl(97 53% 47% / 85%),
-        hsl(97 53% 47% / 85%)
-      ),
-      url("../img/index-background-desktop.jpg");
-    left: 50%;
-    top: 0;
-    width: 720px;
-    height: 694px;
-    z-index: -1;
-
-    @media (min-width: 1440px) and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          hsl(97 53% 47% / 85%),
-          hsl(97 53% 47% / 85%)
-        ),
-        url("../img/index-background-desktop@2x.jpg");
-      background-size: auto 696px;
-    }
   }
 
   .main-wrapper__button {
     padding-top: 52px;
-    padding-left: 190px;
+    padding-left: 160px;
   }
 
   .main-wrapper__block {

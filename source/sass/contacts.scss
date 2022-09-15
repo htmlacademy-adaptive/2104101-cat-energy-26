@@ -22,6 +22,20 @@
   color: #444444;
 }
 
+.contacts__map {
+  background-image: url("../img/map--mobil.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 362px;
+}
+
+@media (min-resolution: 2dppx) {
+  .contacts__map {
+    background-image: url("../img/map--mobil@2x.jpg");
+  }
+}
+
 .contacts__map iframe {
   border: none;
   display: block;
@@ -57,6 +71,18 @@
     width: 768px;
     height: 400px;
   }
+
+  .contacts__map {
+    background-image: url("../img/map--tablet.jpg");
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contacts__map {
+      background-image: url("../img/map--tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -79,5 +105,16 @@
 
   .contacts__adress {
     text-align: left;
+  }
+
+  .contacts__map {
+    background-image: url("../img/map--desktop.jpg");
+    width: 1440px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contacts__map {
+      background-image: url("../img/map--desktop@2x.jpg");
+    }
   }
 }
