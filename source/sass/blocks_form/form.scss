@@ -71,6 +71,20 @@
   outline: none;
 }
 
+
+.form__comment {
+resize: none;
+}
+
+.form__comment:hover {
+  border-color: #cdcdcd;
+}
+
+.form__comment:focus {
+  border-color: #444444;
+}
+
+
 .form__input {
   padding: 13px 11px;
   flex-grow: 1;

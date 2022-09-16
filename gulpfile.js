@@ -68,7 +68,7 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/sprite/*.svg'])
+gulp.src(['source/img/*.svg','!source/img/sprite/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
