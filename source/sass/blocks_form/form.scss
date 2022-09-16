@@ -71,9 +71,13 @@
   outline: none;
 }
 
-
 .form__comment {
-resize: none;
+  width: 100%;
+  min-height: 151px;
+  padding: 9px 12px 15px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  resize: none;
 }
 
 .form__comment:hover {
@@ -83,7 +87,6 @@ resize: none;
 .form__comment:focus {
   border-color: #444444;
 }
-
 
 .form__input {
   padding: 13px 11px;
@@ -157,14 +160,6 @@ resize: none;
   background-image: url("../../img/checkbock_cheked.png");
   background-repeat: no-repeat;
   content: "";
-}
-
-.form__comment {
-  width: 100%;
-  min-height: 151px;
-  padding: 9px 12px 15px;
-  box-sizing: border-box;
-  margin-bottom: 18px;
 }
 
 .form__list--name::after {
