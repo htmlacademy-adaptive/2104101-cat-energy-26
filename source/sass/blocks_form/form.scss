@@ -76,11 +76,13 @@
   flex-grow: 1;
 }
 
-.form__input:hover {
+.form__input:hover,
+.form__comment:hover {
   border-color: #cdcdcd;
 }
 
-.form__input:focus {
+.form__input:focus,
+.form__comment:focus {
   border-color: #444444;
 }
 
