@@ -2,15 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
-    <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png"/>
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font"/>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font"/>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/favicon180x180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
   </head>
   <body class="page-body page__body">
     <header class="main-header">
@@ -18,7 +18,7 @@
         class="navigation main-header__navigation navigation--closed navigation--nojs"
       >
         <div class="navigation__logo-wrapper">
-          <a class="navigation__logo--img" href="index.html">
+          <a class="navigation__logo-img" href="index.html">
             <picture>
               <source
                 media="(min-width: 1200px)"
@@ -40,7 +40,7 @@
                 alt="Логотип."
               /> </picture
           ></a>
-          <a class="navigation__logo--text" href="index.html">
+          <a class="navigation__logo-part-text" href="index.html">
             <img
               class="navigation__logo-text"
               src="img/header_logo_text.svg"
@@ -84,14 +84,14 @@
       <section class="form">
         <h1 class="form__title">Подбор программы</h1>
         <h2 class="form__subtitle">
-          Заполните анкету, и мы подберем<br>программу питания для вашего кота
+          Заполните анкету, и мы подберем<br />программу питания для вашего кота
         </h2>
         <form
           class="form__fields"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <div class="form_fieldsets-wrapper">
+          <div class="form__fieldsets-wrapper">
             <ul class="form__list form__list--name">
               <li class="form__item">
                 <label class="form__label" for="name">ИМЯ:*</label>
@@ -182,7 +182,7 @@
                     width="19"
                     height="14"
                   >
-                  <use href="img/sprite.svg#icon_mail"></use>
+                    <use href="img/sprite.svg#icon_mail"></use>
                   </svg>
                 </div>
               </li>
@@ -196,20 +196,20 @@
                     value="8 (960) 900-60-90"
                     id="phone"
                   />
-                  <svg
-                  class="form__input-icon"
-                    width="20"
-                    height="21"
-                  >
-                  <use href="img/sprite.svg#icon_phone"></use>
+                  <svg class="form__input-icon" width="20" height="21">
+                    <use href="img/sprite.svg#icon_phone"></use>
                   </svg>
                 </div>
               </li>
             </ul>
           </div>
           <h2 class="form__subject form__subject--comment">Комментарий</h2>
-          <textarea class="form__comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea
-          >
+          <textarea
+            class="form__comment"
+            name="comment"
+            id="comment"
+            placeholder="Расскажите обо всех повадках кота"
+          ></textarea>
           <h2 class="form__subject form__subject--additions">Дополнительно</h2>
           <ul class="form__list-checkbox">
             <li class="form__item form__item--additions">
@@ -254,7 +254,7 @@
               </label>
             </li>
           </ul>
-          <div class="form_button-wrapper">
+          <div class="form__button-wrapper">
             <button class="form__button button button--basic" type="submit">
               Отправить заявку
             </button>
@@ -266,9 +266,9 @@
     <section class="contacts contacts--background">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__adress-container">
-        <p class="contacts__title">приглашаем<br>к сотрудничеству дилеров!</p>
+        <p class="contacts__title">приглашаем<br />к сотрудничеству дилеров!</p>
         <div class="contacts__adress-wrapper">
-          <address class="contacts__adress contacts__title--street">
+          <address class="contacts__adress contacts__adress--street">
             ул. Большая Конюшенная, д. 19/8
           </address>
           <address class="contacts__adress">Санкт-Петербург</address>
