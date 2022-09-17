@@ -55,6 +55,11 @@
   border-top: 1px solid #cdcdcd;
 }
 
+.catalog-additions__container-present {
+  margin-top: 37px;
+  margin-bottom: 35px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-additions__text-wrapper {
     display: flex;
@@ -125,6 +130,11 @@
     padding-bottom: 21px;
     justify-content: flex-end;
   }
+
+  .catalog-additions__container-present {
+    margin-top: 69px;
+    margin-bottom: 78px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -178,5 +188,10 @@
 
   .catalog-additions__title::before {
     right: calc(100% + 40px);
+  }
+
+  .catalog-additions__container-present {
+    margin-top: 75px;
+    margin-bottom: 0;
   }
 }

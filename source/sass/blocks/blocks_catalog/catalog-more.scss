@@ -31,21 +31,6 @@
   padding-bottom: 21px;
 }
 
-.catalog-more__wrapper {
-  padding-bottom: 25px;
-  position: relative;
-}
-
-.catalog-more__wrapper::after {
-  content: "";
-  height: 1px;
-  width: 320px;
-  background-color: #ebebeb;
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-}
-
 @media (min-width: $mobile-width-only) {
   .catalog-more__title br {
     display: block;
@@ -53,15 +38,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-more__wrapper {
-    border: 2px solid $basic-gray;
-    padding: 37px;
-  }
-
-  .catalog-more__wrapper::after {
-    display: none;
-  }
-
   .catalog-more__title {
     font-size: 20px;
     line-height: 22px;
